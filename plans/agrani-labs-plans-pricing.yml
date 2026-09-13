@@ -1,0 +1,13 @@
+generated: '2026-09-12'
+method: searched
+source: https://www.agranilabs.com/
+plan_count: 0
+note: >-
+  Agrani Labs publishes no pricing, plans or product catalog of any kind. agranilabs.com is a single
+  static page (Team / Careers / Contact) with no pricing section, no /pricing path and no "contact
+  sales" product surface; the company is pre-product silicon that emerged from stealth in January 2026.
+  There is no API product to price, so this is an honest zero rather than an enterprise sales gate.
+plans: []
+evidence:
+- url: https://www.agranilabs.com/
+  status: 200

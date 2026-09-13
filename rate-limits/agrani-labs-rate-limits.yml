@@ -1,0 +1,18 @@
+generated: '2026-09-12'
+method: searched
+source: https://www.agranilabs.com/
+limit_count: 0
+note: >-
+  No rate limits are documented because no API exists. Contract discovery on 2026-09-12 probed
+  /openapi.json, /openapi.yaml, /swagger.json, /v1/openapi.json, /api-docs, /docs, /redoc and /graphql
+  on both agranilabs.com hosts and every path returned 404; api., docs. and developer.agranilabs.com
+  do not resolve in DNS. With no callable surface there are no windows, quotas, RateLimit-* response
+  headers or 429 semantics to record.
+rate_limits: []
+headers: []
+evidence:
+- url: https://www.agranilabs.com/openapi.json
+  status: 404
+- url: https://api.agranilabs.com/
+  status: 0
+  note: DNS does not resolve

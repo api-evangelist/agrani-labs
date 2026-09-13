@@ -1,7 +1,17 @@
 aid: agrani-labs
 name: Agrani Labs
-description: 'Agrani Labs is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Agrani Labs is a Bengaluru, India semiconductor and systems-software company founded in
+  December 2024 by Dheemanth Nagaraj (CEO), Ashok Jagannathan (chief architect), Srikanth Nimmagadda (CTO)
+  and Rajesh Vivekanandham (chief performance architect), all former AMD and Intel engineers, with Pentium
+  architect Vinod Dham as founding advisor. The company is building indigenous AI GPUs together with the
+  full software stack around them — compilers, kernel and math libraries, system software and AI frameworks
+  — for enterprise and datacenter compute in North America and Asia, and emerged from stealth in January
+  2026 with an $8M seed round led by Peak XV Partners. Agrani Labs is a pre-product silicon company: agranilabs.com
+  is a single static marketing page with a team section, a Notion-hosted careers site and a contact form,
+  and it publishes no developer portal, documentation, API reference, SDK, CLI, changelog, status page
+  or pricing. Enrichment probing on 2026-09-12 found no OpenAPI, Swagger, GraphQL, AsyncAPI, WSDL, gRPC,
+  MCP or A2A agent-card surface on any host, no /.well-known/ documents, no public GitHub organization
+  and no first-party packages in npm, PyPI, Maven Central, NuGet, RubyGems, crates.io or pkg.go.dev.'
 url: https://raw.githubusercontent.com/api-evangelist/agrani-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +22,15 @@ created: '2026-09-12'
 modified: '2026-09-12'
 tags:
 - Company
+- Semiconductors
+- AI Chips
+- GPU
+- Artificial Intelligence
+- Data Center
+- Compute Infrastructure
+- Hardware
+- Deep Tech
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +39,39 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://www.agranilabs.com/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/agrani-labs
+- type: Careers
+  url: https://jobs.agranilabs.com
+- type: SecondaryMarket
   url: https://forgeglobal.com/agrani-labs_stock/
+- type: DomainSecurity
+  url: security/agrani-labs-domain-security.yml
+- type: LLMsTxt
+  url: llms/agrani-labs-llms.txt
+image: https://agranilabs.com/Logos/agrani-logo.png
+x-enrichment:
+  date: '2026-09-12'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: Agrani Labs is a pre-product AI-GPU startup eleven months out of stealth whose entire web presence
+    is one static Apache-served page at agranilabs.com plus a Notion careers site — api., docs. and developer.agranilabs.com
+    do not resolve in DNS, and every OpenAPI, GraphQL and /.well-known/ path on the live hosts returns
+    404.
+  evidence:
+  - url: https://www.agranilabs.com/
+    status: 200
+  - url: https://www.agranilabs.com/openapi.json
+    status: 404
+  - url: https://www.agranilabs.com/graphql
+    status: 404
+  - url: https://www.agranilabs.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.agranilabs.com/llms.txt
+    status: 404
+  checked: '2026-09-12'

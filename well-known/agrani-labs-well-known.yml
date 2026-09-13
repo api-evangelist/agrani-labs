@@ -1,0 +1,42 @@
+generated: '2026-09-12'
+method: probed
+source: live HTTPS probes of every host this record knows (registrable domain, www, careers host)
+note: >-
+  Every named /.well-known/ path was probed on both agranilabs.com hosts on 2026-09-12 and every one
+  returned 404 from the Apache origin serving the static marketing site. No WellKnown or SecurityTxt
+  pointer is wired in apis.yml, because nothing was served — this file records a verified absence, not
+  a presence. jobs.agranilabs.com is a Notion-hosted careers page whose SPA catch-all answers 200 with
+  HTML for arbitrary paths, so it was excluded from the /.well-known/ probe as a known false positive.
+hosts:
+- host: www.agranilabs.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: agranilabs.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
